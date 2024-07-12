@@ -1,22 +1,23 @@
 import Image from 'next/image';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 export default function Home() {
 	return (
-		<div className='h-screen relative overflow-auto'>
+		<ScrollArea className='h-screen relative overflow-x-scroll inline-block whitespace-nowrap w-screen'>
 			<Image
 				src='/front.png'
 				width={100000}
 				height={100000}
-				className='relative inset-0 min-h-screen object-cover overflow-auto'
+				className='relative min-h-screen object-cover overflow-x-scroll'
 				alt=''
 			/>
 			<Image
 				src='/back.png'
 				width={100000}
 				height={100000}
-				className='relative inset-0 min-h-screen object-cover overflow-auto'
+				className='relative min-h-screen object-cover overflow-x-scroll'
 				alt=''
 			/>
-		</div>
+		</ScrollArea>
 	);
 }
