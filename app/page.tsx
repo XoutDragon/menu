@@ -3,7 +3,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 export default function Home() {
 	return (
-		<ScrollArea className='h-screen relative overflow-x-scroll inline-block whitespace-nowrap w-[1850px] justify-center '>
+		<ScrollArea className='relative overflow-x-scroll inline-block whitespace-nowrap w-[1850px] justify-center '>
 			<Image
 				src='/front.png'
 				width={100000}
